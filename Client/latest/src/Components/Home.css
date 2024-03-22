@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+.Main {
+    width: 100%;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgba(205, 166, 251, 1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-right: -20px;
+    box-shadow: 5px 5px 5px 5px rgb(170, 170, 170);
+}
+
+.logo img {
+    height: 200px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Kadwa", serif;
+}
+
+.nav-links li a:hover {
+    color: #ce07fa;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 280px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 500px;
+    font-family: "Kadwa", serif;
+}
+
+.background {
+    margin-left: 570px;
+}
+
+.text1 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.text1 h2 {
+    color: #000000;
+    position: absolute;
+    margin-top: -700px;
+    width: 450px;
+    font-family: "Kadwa", serif;
+}
+
+.button {
+    margin-top: -230px;
+    margin-left: 30px;
+}
+
+.explore-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Kadwa", serif;
+}
+
+.explore-button:hover {
+    background-color: #721302;
+}
