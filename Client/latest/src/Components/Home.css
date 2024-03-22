@@ -12,9 +12,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 110px;
-    margin-top: -30px;
-    margin-left: -30px;
-    margin-right: -20px;
+    margin-top: -2.5%;
+    margin-left: -2.5%;
+    margin-right: -2%;
     box-shadow: 5px 5px 5px 5px rgb(170, 170, 170);
 }
 
@@ -48,7 +48,6 @@ nav {
 .search-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
 }
 
 #search-input {
@@ -57,13 +56,13 @@ nav {
     font-size: 16px;
     border: 2px solid #000000;
     border-radius: 30px;
-    margin-top: 30px;
-    margin-left: 500px;
+    margin-top: 3%;
+    margin-left: 40%;
     font-family: "Kadwa", serif;
 }
 
 .background {
-    margin-left: 570px;
+    margin-left: 50%;
 }
 
 .text1 {

@@ -6,7 +6,7 @@ function Home(){
         <div className="Main">
          <nav>
             <div className="logo">
-               <a href="#"><img src="MITlogo.png"/></a>
+               <a href="#"><img src="MITlogo.png" alt="MITlogo"/></a>
             </div>
                <ul className="nav-links">
                  <li><a href="#">Home</a></li>
@@ -18,7 +18,7 @@ function Home(){
             <input type="search" id="search-input" placeholder="search"/>
          </div>
          <div className="background">
-            <img height={550} src="skate.webp"/>
+            <img height={500} src="skate.webp" alt="background"/>
          </div>
 
          <div className="text1">
