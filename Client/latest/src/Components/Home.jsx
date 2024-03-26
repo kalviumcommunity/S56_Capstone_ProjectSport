@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css"
 import logo from "../images/MITlogo.png"
 import image from "../images/skate.webp"
-import { Link } from "react-router-dom";
+
 
 function Home(){
     return(
@@ -13,7 +13,7 @@ function Home(){
             </div>
                <ul className="nav-links">
                  <li><a href="#">Home</a></li>
-                 <li><Link to="/Detail">Detail</Link></li>
+                 <li><a href="#">Detail</a> </li>
                  <li><a href="#">Contact</a></li>
                </ul>
          </nav>
