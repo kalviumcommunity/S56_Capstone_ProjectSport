@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
-.Main {
+/* .Main {
     width: 100%;
     padding: 20px;
 }
@@ -12,8 +12,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 110px;
-    margin-top: -2.5%;
-    margin-left: -2.5%;
+    margin-top: -3.8%;
+    margin-left: -4%;
     margin-right: -2%;
     box-shadow: 5px 5px 5px 5px rgb(170, 170, 170);
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 .nav-links li {
-    margin-right: 50px;
+    margin-right: 80px;
 }
 
 .nav-links li a {
@@ -43,7 +43,7 @@ nav {
 
 .nav-links li a:hover {
     color: #ce07fa;
-}
+} */
 
 .search-container {
     display: flex;
