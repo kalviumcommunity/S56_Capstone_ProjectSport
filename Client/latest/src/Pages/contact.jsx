@@ -26,98 +26,99 @@ function Contact(){
                 </div>
                 <div className="contact-box">
                     <div className="box">
-                        <img className="contact-img" src={badminton} alt="badminton" />
+            
+                        <img className="contact-img" src={badminton} alt="A person holding a badminton racket and ready to play" />
                         <h2 className="contact-title">Badminton</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={football} alt="football" />
+                        <img className="contact-img" src={football} alt="A football on a grass field with goalposts in the background" />
                         <h2 className="contact-title">Football</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={basketball} alt="basketball" />
+                        <img className="contact-img" src={basketball} alt="A basketball player dribbling a ball on a court" />
                         <h2 className="contact-title">BasketBall</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={cricket} alt="cricket" />
+                        <img className="contact-img" src={cricket} alt="A cricket player holding a bat and ready to hit the ball" />
                         <h2 className="contact-title">Cricket</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={swim} alt="swim" />
+                        <img className="contact-img" src={swim} alt="A person swimming underwater with a swim cap and goggles" />
                         <h2 className="contact-title">Swimming</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={gym} alt="gym" />
+                        <img className="contact-img" src={gym} alt="A gym with various workout equipment and weights" />
                         <h2 className="contact-title">Gym</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={kho} alt="kho-kho" />
+                        <img className="contact-img" src={kho} alt="A group of people playing kho-kho, a traditional Indian sport" />
                         <h2 className="contact-title">Kho-kho</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={kabaddi} alt="kabaddi" />
+                        <img className="contact-img" src={kabaddi} alt="Two teams playing kabaddi, a contact sport from India" />
                         <h2 className="contact-title">Kabaddi</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={tennis} alt="tennis" />
+                        <img className="contact-img" src={tennis} alt="A tennis court with a net and rackets in the foreground" />
                         <h2 className="contact-title">Tennis</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                        <img className="contact-img" src={volly} alt="volly" />
+                        <img className="contact-img" src={volly} alt="A volleyball game in progress on a sandy beach" />
                         <h2 className="contact-title">VolleyBall</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                    <img className="contact-img" src={chess} alt="chess" />
+                    <img className="contact-img" src={chess} alt="A chess board with pieces on it, ready for a game" />
                         <h2 className="contact-title">Chess</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                    <img className="contact-img" src={rowing} alt="rowing" />
+                    <img className="contact-img" src={rowing} alt="A rowing team in a boat, rowing in a lake or river" />
                         <h2 className="contact-title">Rowing</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                    <img className="contact-img" src={boxing} alt="boxing" />
+                    <img className="contact-img" src={boxing} alt="A boxing match in progress in a ring" />
                         <h2 className="contact-title">Boxing</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>
                     </div>
 
                     <div className="box">
-                    <img className="contact-img" src={arc} alt="archery" />
+                    <img className="contact-img" src={arc} alt="An archer holding a bow and arrow, ready to shoot at a target" />
                         <h2 className="contact-title">Archery</h2>
                         <h3 className="contact-name">Name : </h3>
                         <h3 className="contact-no">Phone : </h3>

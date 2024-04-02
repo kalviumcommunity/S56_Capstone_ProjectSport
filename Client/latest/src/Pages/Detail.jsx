@@ -26,7 +26,7 @@ function Detail() {
         </div>
         <div className="sport-card">
           <div className="card">
-            <img className="card-img" src={badminton} alt="badminton" />
+            <img className="card-img" src={badminton}  alt="A person holding a badminton racket and ready to play" />
             <h2 className="card-title">Badminton</h2>
             <p className="card-description">
               Badminton is a racket sport played either individually (singles)
@@ -37,7 +37,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={football} alt="football" />
+            <img className="card-img" src={football} alt="A football on a grass field with goalposts in the background" />
             <h2 className="card-title">Football</h2>
             <p className="card-description">
               A team sport played between two teams of eleven players each,
@@ -46,7 +46,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={basketball} alt="basketball" />
+            <img className="card-img" src={basketball} alt="A basketball player dribbling a ball on a court" />
             <h2 className="card-title">Basketball</h2>
             <p className="card-description">
               A team sport played on a rectangular court with a hoop at each
@@ -55,7 +55,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={cricket} alt="cricket" />
+            <img className="card-img" src={cricket} alt="A cricket player holding a bat and ready to hit the ball" />
             <h2 className="card-title">Cricket</h2>
             <p className="card-description">
               A bat-and-ball game played between two teams of eleven players
@@ -65,7 +65,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={swim} alt="swim" />
+            <img className="card-img" src={swim} alt="A person swimming underwater with a swim cap and goggles" />
             <h2 className="card-title">Swimming</h2>
             <p className="card-description">
               A water sport involving various strokes and distances, where
@@ -74,7 +74,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={gym} alt="gym" />
+            <img className="card-img" src={gym}  alt="A gym with various workout equipment and weights" />
             <h2 className="card-title">Gym</h2>
             <p className="card-description">
               A sport involving exercises that require balance, strength,
@@ -83,7 +83,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={kho} alt="kho" />
+            <img className="card-img" src={kho} alt="A group of people playing kho-kho, a traditional Indian sport"/>
             <h2 className="card-title">Kho-Kho</h2>
             <p className="card-description">
               The game is played between two teams, each consisting of twelve
@@ -94,7 +94,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={kabaddi} alt="kabaddi" />
+            <img className="card-img" src={kabaddi} alt="Two teams playing kabaddi, a contact sport from India" />
             <h2 className="card-title">Kabaddi</h2>
             <p className="card-description">
               Kabaddi is a team sport played between two teams, each
@@ -105,7 +105,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={tennis} alt="tennis" />
+            <img className="card-img" src={tennis} alt="A tennis court with a net and rackets in the foreground" />
             <h2 className="card-title">Tennis</h2>
             <p className="card-description">
               A racket sport played either individually against a single
@@ -115,7 +115,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={volly} alt="volley" />
+            <img className="card-img" src={volly}  alt="A volleyball game in progress on a sandy beach" />
             <h2 className="card-title">VolleyBall</h2>
             <p className="card-description">
               The primary objective of volleyball is to score points by
@@ -125,7 +125,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={chess} alt="chess" />
+            <img className="card-img" src={chess} alt="A chess board with pieces on it, ready for a game" />
             <h2 className="card-title">Chess</h2>
             <p className="card-description">
               The primary objective of chess is to checkmate the opponent's
@@ -134,7 +134,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={rowing} alt="rowing" />
+            <img className="card-img" src={rowing}  alt="A rowing team in a boat, rowing in a lake or river" />
             <h2 className="card-title">Rowing</h2>
             <p className="card-description">
               Rowing boats, also known as shells, come in various designs
@@ -144,7 +144,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={boxing} alt="boxing" />
+            <img className="card-img" src={boxing} alt="A boxing match in progress in a ring"/>
             <h2 className="card-title">Boxing</h2>
             <p className="card-description">
               A combat sport where two opponents engage in a contest of
@@ -153,7 +153,7 @@ function Detail() {
             </p>
           </div>
           <div className="card">
-            <img className="card-img" src={arc} alt="arc" />
+            <img className="card-img" src={arc}  alt="An archer holding a bow and arrow, ready to shoot at a target" />
             <h2 className="card-title">Archery</h2>
             <p className="card-description">
               Archers employ a specific shooting technique involving stance,
