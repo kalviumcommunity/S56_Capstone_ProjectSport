@@ -1,0 +1,47 @@
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-heading {
+    text-align: center;
+    font-family: "Kadwa", serif;
+
+}
+
+
+.contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-title {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Kadwa", serif;
+}
+
+.contact-name,
+.contact-no {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: "Kadwa", serif;
+}
