@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import "./Home.css";
 import image from "../images/skate.webp";
 import Nav from "../Components/Nav";
@@ -20,7 +21,7 @@ function Home() {
                 </div>
 
                 <div className="button">
-                    <button className="explore-button">Explore</button>
+                    <Link to="/Register"> <button className="explore-button">Register</button></Link>
                 </div>
             </div>
         </div>
