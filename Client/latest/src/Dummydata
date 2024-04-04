@@ -1,0 +1,147 @@
+[
+  {
+    "Batch": "Batch-1(Boys)",
+    "Sport": "Gym and Swimming",
+    "Timing": "6:30am to 7:30am"
+  },
+  {
+    "Batch": "Batch-2(Girls)",
+    "Sport": "Gym and Swimming",
+    "Timing": "7:30am to 8:30am"
+  },
+  {
+    "Batch": "Batch-3(Boys)",
+    "Sport": "Gym and Swimming",
+    "Timing": "4:30pm to 5:30pm"
+  },
+  {
+    "Batch": "Batch-4(Girls)",
+    "Sport": "Gym and Swimming",
+    "Timing": "5:30pm to 6:30pm"
+  },
+  {
+    "Batch": "Batch-5(Boys)",
+    "Sport": "Gym and Swimming",
+    "Timing": "6:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-6(Girls)",
+    "Sport": "Badminton",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-7(Boys)",
+    "Sport": "Badminton",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-8(Girls)",
+    "Sport": "Football",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-9(Boys)",
+    "Sport": "Football",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-10(Girls)",
+    "Sport": "Basketball",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-11(Boys)",
+    "Sport": "Basketball",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-12(Girls)",
+    "Sport": "Cricket",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-13(Boys)",
+    "Sport": "Cricket",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-14(Girls)",
+    "Sport": "Kho-Kho",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-15(Boys)",
+    "Sport": "Kho-Kho",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-16(Girls)",
+    "Sport": "Kabaddi",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-17(Boys)",
+    "Sport": "Kabaddi",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-18(Girls)",
+    "Sport": "Tennis",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-19(Boys)",
+    "Sport": "Tennis",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-20(Girls)",
+    "Sport": "Volleyball",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-21(Boys)",
+    "Sport": "Volleyball",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-22(Girls)",
+    "Sport": "Chess",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-23(Boys)",
+    "Sport": "Chess",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-24(Girls)",
+    "Sport": "Rowing",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-25(Boys)",
+    "Sport": "Rowing",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-26(Girls)",
+    "Sport": "Boxing",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-27(Boys)",
+    "Sport": "Boxing",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-28(Girls)",
+    "Sport": "Archery",
+    "Timing": "4:30pm to 7:30pm"
+  },
+  {
+    "Batch": "Batch-29(Boys)",
+    "Sport": "Archery",
+    "Timing": "4:30pm to 7:30pm"
+  }
+]
