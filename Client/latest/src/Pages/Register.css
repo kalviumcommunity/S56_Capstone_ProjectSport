@@ -91,7 +91,6 @@
     cursor: pointer;
     margin-left: 30%;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
   }
   
   .submit-button:hover {
