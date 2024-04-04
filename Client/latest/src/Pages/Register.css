@@ -1,19 +1,20 @@
 .background-container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .background-image {
-    width: 100%;
-    margin-right: 20px;
-    filter: blur(5px);
-  }
-  
-  .logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
+  position: relative;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  margin-right: 2%;
+  filter: blur(5px);
+}
+
+.logo-container {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
   
   .side-image-container {
     position: absolute;
@@ -57,43 +58,43 @@
   
   .form-group {
     margin-bottom: 20px;
-  }
-  
-  .label-name,
-  .label-phone,
-  .label-batch,
-  .label-sport,
-  .label-email {
+}
+
+.label-name,
+.label-phone,
+.label-batch,
+.label-sport,
+.label-email {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .input-name,
-  .input-phone,
-  .input-batch,
-  .input-sport,
-  .input-email {
+}
+
+.input-name,
+.input-phone,
+.input-batch,
+.input-sport,
+.input-email {
     width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: "Kadwa", serif;
-  }
-  
-  .submit-button {
+}
+
+.submit-button {
     width: 40%;
     padding: 10px;
     background-color: rgba(205, 166, 251, 1);
-    color: #000000;
+    color: #000;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     margin-left: 30%;
     font-weight: bold;
-  }
-  
-  .submit-button:hover {
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
     background-color: rgb(166, 88, 255);
-  }
-  
+}
