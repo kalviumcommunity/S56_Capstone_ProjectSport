@@ -1,24 +1,32 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const { isConnected } = require("./config/db.js");
+const cors = require("cors");
+const routes = require('./routes');
+require('dotenv').config(); 
+
 const app = express();
-const dotenv = require('dotenv');
-dotenv.config();
-const port = process.env.PUBLIC_PORT || 3000;
+
+
 app.use(express.json());
+app.use(cors()); 
 
 
 app.get("/", (req, res) => {
-  res.send("This is the first page!!");
+  res.json({"Database Connection" : isConnected() ? "Connected" : "Not Connected"});
 });
 
 app.get("/hello", (req, res) => {
   res.send("Hello World!!");
 });
+app.use("/sport",routes)
+app.use(routes);
 
+mongoose.connect(process.env.URI)
+    .then(() => console.log('MongoDB connected'))
+    .catch(err => console.error('Database connection error:', err)); 
 
-if (require.main === module) {
-  app.listen(port, () => {
-    console.log(`Server running on PORT: ${port}`);
-  });
-}
-
-module.exports = app;
+const PORT = process.env.PORT || 3200;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
