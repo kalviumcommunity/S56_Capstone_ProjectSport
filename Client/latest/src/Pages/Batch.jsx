@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../Components/Nav";
 import "./Batch.css";
-import badminton from "../images/badminton.avif";
+import badminton from "../images/badminton.jpg";
 import basketball from "../images/basketball.jpeg";
 import football from "../images/football.jpeg";
 import cricket from "../images/cricket.jpeg";
@@ -30,7 +30,7 @@ function Batch() {
                         <h2 className="batch-title">Gym & Swimming</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">6:30am to 7:30am</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -39,7 +39,7 @@ function Batch() {
                         <h2 className="batch-title">Gym & Swimming</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">7:30am to 8:30am</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -48,7 +48,7 @@ function Batch() {
                         <h2 className="batch-title">Gym & Swimming</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 5:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -57,7 +57,7 @@ function Batch() {
                         <h2 className="batch-title">Gym & Swimming</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">5:30pm to 6:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -66,7 +66,7 @@ function Batch() {
                         <h2 className="batch-title">Gym & Swimming</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">6:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -75,7 +75,7 @@ function Batch() {
                         <h2 className="batch-title">Badminton</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -84,7 +84,7 @@ function Batch() {
                         <h2 className="batch-title">Badminton</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -93,7 +93,7 @@ function Batch() {
                         <h2 className="batch-title">FootBall</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -102,7 +102,7 @@ function Batch() {
                         <h2 className="batch-title">FootBall</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -111,7 +111,7 @@ function Batch() {
                         <h2 className="batch-title">Basketball</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -120,7 +120,7 @@ function Batch() {
                         <h2 className="batch-title">Basketball</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -129,7 +129,7 @@ function Batch() {
                         <h2 className="batch-title">Cricket</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -138,7 +138,7 @@ function Batch() {
                         <h2 className="batch-title">Cricket</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -147,7 +147,7 @@ function Batch() {
                         <h2 className="batch-title">Kho-kho</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -156,7 +156,7 @@ function Batch() {
                         <h2 className="batch-title">Kho-kho</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -165,7 +165,7 @@ function Batch() {
                         <h2 className="batch-title">Kabaddi</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -174,7 +174,7 @@ function Batch() {
                         <h2 className="batch-title">Kabaddi</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -183,7 +183,7 @@ function Batch() {
                         <h2 className="batch-title">Tennis</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -192,7 +192,7 @@ function Batch() {
                         <h2 className="batch-title">tennis</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -201,7 +201,7 @@ function Batch() {
                         <h2 className="batch-title">Volleyball</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -210,7 +210,7 @@ function Batch() {
                         <h2 className="batch-title">Volleyball</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -219,7 +219,7 @@ function Batch() {
                         <h2 className="batch-title">Chess</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -228,7 +228,7 @@ function Batch() {
                         <h2 className="batch-title">Chess</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -237,7 +237,7 @@ function Batch() {
                         <h2 className="batch-title">Rowing</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -246,7 +246,7 @@ function Batch() {
                         <h2 className="batch-title">Rowing</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -255,7 +255,7 @@ function Batch() {
                         <h2 className="batch-title">Boxing</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -264,7 +264,7 @@ function Batch() {
                         <h2 className="batch-title">Boxing</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -273,7 +273,7 @@ function Batch() {
                         <h2 className="batch-title">Archery</h2>
                         <h3 className="batch-batch">Girls</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
 
@@ -283,7 +283,7 @@ function Batch() {
                         <h2 className="batch-title">Archery</h2>
                         <h3 className="batch-batch">Boys</h3>
                         <h3 className="batch-time">4:30pm to 7:30pm</h3>
-                        <button className="update1">Update</button>
+                        <button className="update-data">Update</button>
                         <button className="delete">Delete</button>
                     </div>
                 </div>

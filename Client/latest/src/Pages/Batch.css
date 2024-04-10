@@ -22,7 +22,7 @@
     background-color: rgb(194, 146, 249);
 }
 
-.update1,
+.update-data,
 .delete {
     background-color: #f44336; /* Red */
     border: none;
@@ -37,7 +37,7 @@
     border-radius: 5px;
 }
 
-.update1:hover,
+.update-data:hover,
 .delete:hover {
     background-color: #d32f2f; 
 }

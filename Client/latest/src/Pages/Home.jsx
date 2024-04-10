@@ -12,7 +12,7 @@ function Home() {
                 <div className="search">
                     <input type="search" id="search-input" placeholder="search" />
                 </div>
-                <div className="button1">
+                <div className="batch-button">
                     <Link to="/Batch"><button className="batch">Check Batches</button></Link>
                 </div>
                 <div className="background">
