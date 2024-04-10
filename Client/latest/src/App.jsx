@@ -6,7 +6,7 @@ import About from "./Pages/About";
 import Detail from "./Pages/Detail";
 import Contact from "./Pages/contact";
 import Register from "./Pages/Register";
-
+import Batch from "./Pages/Batch";
 
 function App(){
   return(
@@ -19,6 +19,7 @@ function App(){
       <Route path="/Detail" element={<Detail/>}/>
       <Route path="/Contact" element={<Contact/>}/>
       <Route path="/Register" element={<Register/>}/>
+      <Route path="/batch" element={<Batch/>}/>
      
 
     </Routes>
