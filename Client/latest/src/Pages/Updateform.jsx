@@ -1,43 +1,35 @@
-// UpdateForm.js
 import React, { useState } from "react";
 import "./UpdateForm.css";
 import pic from "../images/vector.jpg";
 
 function UpdateForm() {
-  const [name, setName] = useState("");
-  const [batch, setBatch] = useState("");
-  const [sport, setSport] = useState("");
-  const [timing, setTiming] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    batch: "",
+    sport: "",
+    timing: "",
+  });
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleBatchChange = (e) => {
-    setBatch(e.target.value);
-  };
-
-  const handleSportChange = (e) => {
-    setSport(e.target.value);
-  };
-
-  const handleTimingChange = (e) => {
-    setTiming(e.target.value);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      name.trim() === "" ||
-      batch.trim() === "" ||
-      sport.trim() === "" ||
-      timing.trim() === ""
+      formData.name.trim() === "" ||
+      formData.batch.trim() === "" ||
+      formData.sport.trim() === "" ||
+      formData.timing.trim() === ""
     ) {
       alert("All fields are required");
     } else {
-      console.log("Update submitted:", { name, batch, sport, timing });
+      console.log("Update submitted:", formData);
       alert("Update successfully done!");
-      // You can add your update logic here, like sending the data to the server
     }
   };
 
@@ -57,8 +49,9 @@ function UpdateForm() {
           <div className="form-group">
             <input
               type="text"
-              value={name}
-              onChange={handleNameChange}
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               required
               className="update-input"
               placeholder="Enter your name"
@@ -67,8 +60,9 @@ function UpdateForm() {
           <div className="form-group">
             <input
               type="text"
-              value={batch}
-              onChange={handleBatchChange}
+              name="batch"
+              value={formData.batch}
+              onChange={handleChange}
               required
               className="update-input"
               placeholder="Enter your batch"
@@ -77,8 +71,9 @@ function UpdateForm() {
           <div className="form-group">
             <input
               type="text"
-              value={sport}
-              onChange={handleSportChange}
+              name="sport"
+              value={formData.sport}
+              onChange={handleChange}
               required
               className="update-input"
               placeholder="Enter your sport"
@@ -87,8 +82,9 @@ function UpdateForm() {
           <div className="form-group">
             <input
               type="text"
-              value={timing}
-              onChange={handleTimingChange}
+              name="timing"
+              value={formData.timing}
+              onChange={handleChange}
               required
               className="update-input"
               placeholder="Enter your timing"
