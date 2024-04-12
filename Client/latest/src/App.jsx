@@ -7,6 +7,7 @@ import Detail from "./Pages/Detail";
 import Contact from "./Pages/contact";
 import Register from "./Pages/Register";
 import Batch from "./Pages/Batch";
+import UpdateForm from "./Pages/Updateform";
 
 function App(){
   return(
@@ -20,6 +21,7 @@ function App(){
       <Route path="/Contact" element={<Contact/>}/>
       <Route path="/Register" element={<Register/>}/>
       <Route path="/batch" element={<Batch/>}/>
+      <Route path="/updateform" element={<UpdateForm/>}/>
      
 
     </Routes>

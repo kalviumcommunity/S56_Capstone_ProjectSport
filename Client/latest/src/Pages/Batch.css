@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.Sent{
+    color: rgb(255, 0, 0);
+}
 
 .boxes {
     background-color: rgba(205, 166, 251, 1);
