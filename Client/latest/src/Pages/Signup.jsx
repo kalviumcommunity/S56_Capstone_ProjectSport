@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import photo from "../images/geound.jpg";
-import football from "../images/OIP.jpeg";
 import mitImage from "../images/Mit.jpeg";
-import "./Signup.css"; // Ensure you have Signup.css for styling
+import "./Signup.css"; 
 import { Link } from "react-router-dom";
 
 function Signup() {
@@ -15,16 +14,16 @@ function Signup() {
 
   const [passwordMatch, setPasswordMatch] = useState(true);
 
+  useEffect(() => {
+    setPasswordMatch(formData.password === formData.confirmPassword);
+  }, [formData.password, formData.confirmPassword]);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value
     });
-
-    if (name === "confirmPassword") {
-      setPasswordMatch(formData.password === value);
-    }
   };
 
   const handleSubmit = (e) => {
@@ -34,7 +33,7 @@ function Signup() {
       return;
     }
     console.log("Submitted Form Data:", formData);
-    // You can add further validation or submission logic here
+    
     setFormData({
       username: "",
       email: "",
@@ -58,7 +57,6 @@ function Signup() {
         <h1 className="signup-text">Signup</h1>
       </div>
       <div className="signup-container">
-       
         <div className="signup-box">
           <h2 className="center-text">"Join the winning team, sign up now!"</h2>
           <form onSubmit={handleSubmit}>
