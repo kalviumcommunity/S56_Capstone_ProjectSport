@@ -94,3 +94,20 @@
     margin-top: 12%;
     filter: blur(0.8px);
 }
+.btnn {
+    padding: 10px 20px;
+    background-color:rgb(255, 106, 0); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 90%;
+    margin-top: -10%;
+
+  }
+  
+  .btnn:hover {
+    background-color: orange; 
+  }
+  

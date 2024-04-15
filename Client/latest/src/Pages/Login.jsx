@@ -37,6 +37,10 @@ function Login() {
       <div className="mit">
         <img className="mitimg" src={mitImage} alt="MIT Logo" />
       </div>
+
+      <Link to="/signup">
+              <input type="submit" className="btnn" value="Signup" />
+            </Link>
       
       <div className="login">
         <h1 className="text0">Login</h1>
