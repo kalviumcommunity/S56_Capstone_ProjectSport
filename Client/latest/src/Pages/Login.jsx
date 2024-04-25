@@ -20,13 +20,36 @@ function Login() {
     });
   };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Submitted Form Data:", formData);
+  //   setFormData({
+  //     username: "",
+  //     password: ""
+  //   });
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitted Form Data:", formData);
-    setFormData({
-      username: "",
-      password: ""
-    });
+    try {
+      const response = await fetch('/api/validate-user', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const isValidUser = await response.json();
+      if (isValidUser) {
+        console.log('Logged in successfully');
+        setFormData({
+          username: "",
+          password: ""
+        });
+      } else {
+        console.log('Invalid username or password');
+      }
+    } catch (error) {
+      console.log('Error:', error);
+    }
   };
 
   return (
