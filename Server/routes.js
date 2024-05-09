@@ -11,4 +11,11 @@ router.get('/sport', async (req, res) => {
     }
 });
 
+router.delete('/deleteuser/:id',(req,res)=>{
+    const id = req.params.id;
+    Mitsport.findByIdAndDelete({_id:id})
+    .then (result => res.json(result))
+    .catch (err => res.json(err))
+})
+
 module.exports = router;

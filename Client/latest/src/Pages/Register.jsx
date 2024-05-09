@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import "./Register.css";
 import logo from "../images/Mit.jpeg";
 import picture from "../images/game.jpg";
-import photo from "../images/vector.jpg"
+import photo from "../images/vector.jpg";
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [batch, setBatch] = useState("");
-  const [sport, setSport] = useState("");
-  const [email, setEmail] = useState("");
+  const [Name, setName] = useState("");
+  const [Phone, setPhone] = useState("");
+  const [Batch, setBatch] = useState("");
+  const [Sport, setSport] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Timing, setTime] = useState("");
+  const [newData, setNewData] = useState([]);
+  const navigate = useNavigate();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -31,18 +36,31 @@ function Register() {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleTimeChange = (e) => {
+    setTime(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (
-      name.trim() === "" ||
-      phone.trim() === "" ||
-      batch.trim() === "" ||
-      sport.trim() === "" ||
-      email.trim() === ""
+      Name.trim() === "" ||
+      Phone.trim() === "" ||
+      Batch.trim() === "" ||
+      Sport.trim() === "" ||
+      Email.trim() === "" ||
+      Timing.trim() === ""
     ) {
       alert("All fields are required");
     } else {
-      console.log("Registration submitted:", { name, phone, batch, sport, email });
+      const newRegistration = { Name, Phone, Batch, Sport, Email, Timing };
+      try {
+        const response = await axios.post("http://localhost:3000/register", newRegistration);
+        console.log("Registration successful:", response.data);
+        setNewData(response.data);
+        navigate('/batch');
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -59,17 +77,13 @@ function Register() {
       </div>
       <form onSubmit={handleSubmit} className="register-form">
         <div className="form-group">
-          <label htmlFor="name" className="label-name">
-            
+          <label htmlFor="Name" className="label-name">
+            Name
           </label>
-
-          <div className="head">
-          <h1 className="top">Registration</h1>
-          </div>
           <input
             type="text"
-            id="name"
-            value={name}
+            id="Name"
+            value={Name}
             onChange={handleNameChange}
             required
             className="input-name"
@@ -77,13 +91,13 @@ function Register() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="phone" className="label-phone">
-            
+          <label htmlFor="Phone" className="label-phone">
+            Phone
           </label>
           <input
             type="text"
-            id="phone"
-            value={phone}
+            id="Phone"
+            value={Phone}
             onChange={handlePhoneChange}
             required
             className="input-phone"
@@ -91,13 +105,13 @@ function Register() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="batch" className="label-batch">
-            
+          <label htmlFor="Batch" className="label-batch">
+            Batch
           </label>
           <input
             type="text"
-            id="batch"
-            value={batch}
+            id="Batch"
+            value={Batch}
             onChange={handleBatchChange}
             required
             className="input-batch"
@@ -105,12 +119,13 @@ function Register() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="sport" className="label-sport">
+          <label htmlFor="Sport" className="label-sport">
+            Sport
           </label>
           <input
             type="text"
-            id="sport"
-            value={sport}
+            id="Sport"
+            value={Sport}
             onChange={handleSportChange}
             required
             className="input-sport"
@@ -118,16 +133,31 @@ function Register() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email" className="label-email">
+          <label htmlFor="Email" className="label-email">
+            Email
           </label>
           <input
             type="email"
-            id="email"
-            value={email}
+            id="Email"
+            value={Email}
             onChange={handleEmailChange}
             required
             className="input-email"
             placeholder="Enter your email"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="Time" className="label-time">
+            Time
+          </label>
+          <input
+            type="time"
+            id="Time"
+            value={Timing}
+            onChange={handleTimeChange}
+            required
+            className="input-time"
+            placeholder="Enter your time"
           />
         </div>
         <button type="submit" className="submit-button">
