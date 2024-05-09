@@ -73,12 +73,11 @@ function Register() {
         <img width={150} className="logo-image" src={logo} alt="logo photo" />
       </div>
       <div className="side-image-container">
-        <img width={400} height={519} className="side-image" src={picture} alt="side img" />
+        <img width={400} height={490} className="side-image" src={picture} alt="side img" />
       </div>
       <form onSubmit={handleSubmit} className="register-form">
         <div className="form-group">
           <label htmlFor="Name" className="label-name">
-            Name
           </label>
           <input
             type="text"
@@ -92,7 +91,6 @@ function Register() {
         </div>
         <div className="form-group">
           <label htmlFor="Phone" className="label-phone">
-            Phone
           </label>
           <input
             type="text"
@@ -106,7 +104,6 @@ function Register() {
         </div>
         <div className="form-group">
           <label htmlFor="Batch" className="label-batch">
-            Batch
           </label>
           <input
             type="text"
@@ -120,7 +117,6 @@ function Register() {
         </div>
         <div className="form-group">
           <label htmlFor="Sport" className="label-sport">
-            Sport
           </label>
           <input
             type="text"
@@ -134,7 +130,6 @@ function Register() {
         </div>
         <div className="form-group">
           <label htmlFor="Email" className="label-email">
-            Email
           </label>
           <input
             type="email"
@@ -148,7 +143,6 @@ function Register() {
         </div>
         <div className="form-group">
           <label htmlFor="Time" className="label-time">
-            Time
           </label>
           <input
             type="time"
