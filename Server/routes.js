@@ -11,19 +11,32 @@ router.get('/sport', async (req, res) => {
     }
 });
 
-router.put('/updateuser/:id', async (req, res) => {
-    const { id } = req.params;
-    const updateData = req.body;
-    try {
-        const updatedUser = await Mitsport.findByIdAndUpdate(id, updateData, { new: true });
-        if (!updatedUser) {
-            return res.status(404).json({ message: "User not found" });
+router.put(
+    '/updateuser/:id',
+    [
+        check('Batch').optional().isString().withMessage('Batch must be a string'),
+        check('Sport').optional().isString().withMessage('Sport must be a string'),
+        check('Timing').optional().isString().withMessage('Timing must be a string'),
+    ],
+    async (req, res) => {
+        const { id } = req.params;
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
         }
-        res.status(200).json(updatedUser);
-    } catch (err) {
-        res.status(500).json({ message: err.message });
+
+        const updateData = req.body;
+        try {
+            const updatedUser = await Mitsport.findByIdAndUpdate(id, updateData, { new: true });
+            if (!updatedUser) {
+                return res.status(404).json({ message: 'User not found' });
+            }
+            res.status(200).json(updatedUser);
+        } catch (err) {
+            res.status(500).json({ message: err.message });
+        }
     }
-});
+);
 
 router.delete('/deleteuser/:id', async (req, res) => {
     const { id } = req.params;
