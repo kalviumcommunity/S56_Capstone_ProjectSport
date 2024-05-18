@@ -10,8 +10,8 @@ function Batch() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('https://s56-capstone-projectsport.onrender.com/sport');
-            console.log(response)
+            const response = await axios.get('http://localhost:3000/sport');
+            console.log(response.data.sports)
             setData(response.data.sports);
         } catch (error) {
             console.log(error);
@@ -21,7 +21,7 @@ function Batch() {
     useEffect(() => {
         fetchData();
     }, []);
-
+    
     return (
         <>
             <Nav />
@@ -32,6 +32,8 @@ function Batch() {
                 <div className="button">
                     <Link to="/Register"><button className="explore-button">Register</button></Link>
                 </div>
+
+                
 
                 <div className="display">
                     {data.map((ele, i) => (

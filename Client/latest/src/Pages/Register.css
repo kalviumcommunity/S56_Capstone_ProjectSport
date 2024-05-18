@@ -64,7 +64,8 @@
 .label-phone,
 .label-batch,
 .label-sport,
-.label-email {
+.label-email,
+.label-time {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -74,7 +75,8 @@
 .input-phone,
 .input-batch,
 .input-sport,
-.input-email {
+.input-email, 
+.input-time{
     width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
