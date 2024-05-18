@@ -1,102 +1,71 @@
-import React, { useState } from "react";
-import "./UpdateForm.css";
-import pic from "../images/vector.jpg";
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import "./UpdateForm.css"
 
 function UpdateForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    batch: "",
-    sport: "",
-    timing: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const [formData, setFormData] = useState({
+        Batch: '',
+        Sport: '',
+        Timing: ''
     });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (
-      formData.name.trim() === "" ||
-      formData.batch.trim() === "" ||
-      formData.sport.trim() === "" ||
-      formData.timing.trim() === ""
-    ) {
-      alert("All fields are required");
-    } else {
-      console.log("Update submitted:", formData);
-      alert("Update successfully done!");
-    }
-  };
+    useEffect(() => {
+        axios.get(`/sport/${id}`)
+            .then(response => {
+                const data = response.data;
+                setFormData({
+                    Batch: data.Batch || '',
+                    Sport: data.Sport || '',
+                    Timing: data.Timing || ''
+                });
+            })
+            .catch(error => console.error(error));
+    }, [id]);
 
-  return (
-    <div className="updatemain">
-      <div className="update-form-background">
-        <img
-          src={pic}
-          width={1240}
-          height={670}
-          alt="background image for update form"
-        />
-      </div>
-      <div className="update-form-container">
-        <h1 className="update-form-header">Update Form</h1>
-        <form onSubmit={handleSubmit} className="update-form">
-          <div className="form-group">
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.put(`http://localhost:3000/updateuser/${id}`, formData)
+            .then(response => {
+                console.log(response.data);
+                navigate('/batch');
+            })
+            .catch(error => console.error(error));
+    };
+
+    return (
+        <form className='updateform' onSubmit={handleSubmit}>
             <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="update-input"
-              placeholder="Enter your name"
+                type="text"
+                name="Batch"
+                value={formData.Batch}
+                onChange={handleChange}
+                placeholder="Batch"
             />
-          </div>
-          <div className="form-group">
             <input
-              type="text"
-              name="batch"
-              value={formData.batch}
-              onChange={handleChange}
-              required
-              className="update-input"
-              placeholder="Enter your batch"
+                type="text"
+                name="Sport"
+                value={formData.Sport}
+                onChange={handleChange}
+                placeholder="Sport"
             />
-          </div>
-          <div className="form-group">
             <input
-              type="text"
-              name="sport"
-              value={formData.sport}
-              onChange={handleChange}
-              required
-              className="update-input"
-              placeholder="Enter your sport"
+                type="text"
+                name="Timing"
+                value={formData.Timing}
+                onChange={handleChange}
+                placeholder="Timing"
             />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              name="timing"
-              value={formData.timing}
-              onChange={handleChange}
-              required
-              className="update-input"
-              placeholder="Enter your timing"
-            />
-          </div>
-          <button type="submit" className="update-button">
-            Update
-          </button>
+            <button type="submit">Update</button>
         </form>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default UpdateForm;

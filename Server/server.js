@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const routes = require('./routes');
+const router = require('./routes');
 require('dotenv').config();
 const {Mitsport} = require('./models/sport.js');
 
@@ -9,8 +9,8 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use('/sport', routes);
-app.use(routes);
+app.use('/sport', router);
+app.use(router);
 
 mongoose.connect(process.env.URI)
   .then(() => console.log('MongoDB connected'))
@@ -32,3 +32,4 @@ app.post('/register', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
