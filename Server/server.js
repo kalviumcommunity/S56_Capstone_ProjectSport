@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/sport', router);
-app.use(router);
+app.use(router); 
 
 mongoose.connect(process.env.URI)
   .then(() => console.log('MongoDB connected'))
