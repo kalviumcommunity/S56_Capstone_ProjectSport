@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/sport', router);
-app.use(router);
+app.use(router); 
 
 mongoose.connect(process.env.URI)
   .then(() => console.log('MongoDB connected'))
@@ -32,27 +32,3 @@ app.post('/register', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
-
-// app.post(
-//   '/register',
-//   [
-//       check('Batch').notEmpty().isString().withMessage('Batch is required and must be a string'),
-//       check('Sport').notEmpty().isString().withMessage('Sport is required and must be a string'),
-//       check('Timing').notEmpty().isString().withMessage('Timing is required and must be a string'),
-//   ],
-//   async (req, res) => {
-//       const errors = validationResult(req);
-//       if (!errors.isEmpty()) {
-//           return res.status(400).json({ errors: errors.array() });
-//       }
-
-//       const { Batch, Sport, Timing } = req.body;
-//       try {
-//           const newMitsport = new Mitsport({ Batch, Sport, Timing });
-//           await newMitsport.save();
-//           res.status(201).json(newMitsport);
-//       } catch (err) {
-//           res.status(500).json({ message: err.message });
-//       }
-//   }
-// );

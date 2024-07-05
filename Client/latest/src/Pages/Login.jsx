@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import photo from "../images/geound.jpg";
 import football from "../images/OIP.jpeg";
-import mitImage from "../images/Mit.jpeg"
+import mitImage from "../images/Mit.jpeg";
 import "./Login.css";
 import { Link } from "react-router-dom";
-
 
 function Login() {
   const [formData, setFormData] = useState({
     username: "",
     password: ""
   });
+
+  const navigate = useNavigate();  // Initialize useNavigate hook
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,25 +24,39 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submitted Form Data:", formData);
-    setFormData({
-      username: "",
-      password: ""
-    });
+    if (formData.username.trim() === '' && formData.password.trim() === '') {
+      alert('Username and password are required');
+    } else if (formData.username.trim() === '') {
+      alert('Username is required');
+    } else if (formData.password.trim() === '') {
+      alert('Password is required');
+    } else {
+      console.log("Login submitted:", formData);
+      document.cookie = `username=${formData.username};expires=${new Date(2030, 0, 1).toUTCString()}`;
+      setFormData({
+        username: "",
+        password: ""
+      });
+      navigate("/home");  
+    }
+  };
+
+  const handleLogout = () => {
+    document.cookie = `username=;expires=${new Date(2000, 0, 1).toUTCString()}`;
   };
 
   return (
     <div>
       <div className="backgroundimg1">
-        <img height={660} width={1260} src={photo} />
+        <img height={660} width={1260} src={photo} alt="Background" />
       </div>
       <div className="mit">
         <img className="mitimg" src={mitImage} alt="MIT Logo" />
       </div>
 
       <Link to="/signup">
-              <input type="submit" className="btnn" value="Signup" />
-            </Link>
+        <input type="submit" className="btnn" value="Signup" />
+      </Link>
       
       <div className="login">
         <h1 className="text0">Login</h1>
@@ -70,12 +86,12 @@ function Login() {
                 required 
               />
             </div>
-            <Link to="/Home">
-              <input type="submit" className="btn" value="Login" />
-            </Link>
-
+            <button type="submit" className="btn">Login</button>
           </form>
         </div>
+      </div>
+      <div className="logout-container" id="logout">
+        <button onClick={handleLogout}>Logout</button>
       </div>
     </div>
   );
